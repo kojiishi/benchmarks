@@ -1,6 +1,5 @@
-<dom-module id="x-thing">
 <style>
-  .message {
+  html /deep/ .message {
     box-sizing: border-box;
     height: 80px;
     padding: 4px;
@@ -16,18 +15,19 @@
     border-bottom: 1px solid #ddd;
   }
 
-  .from {
+  html /deep/ .from {
     display: inline;
     font-weight: bold;
   }
 
-  .timestamp {
+  html /deep/ .timestamp {
     margin-left: 10px;
     font-size: 12px;
     opacity: 0.8;
   }
 
 </style>
+<dom-module id="x-thing">
 <template>
 
   <div class="message">
