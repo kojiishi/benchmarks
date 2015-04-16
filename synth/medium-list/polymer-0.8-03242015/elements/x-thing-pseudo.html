@@ -1,6 +1,5 @@
-<dom-module id="x-thing">
 <style>
-  .message {
+  x-app::shadow x-item::shadow x-thing::shadow .message {
     box-sizing: border-box;
     height: 80px;
     padding: 4px;
@@ -16,18 +15,19 @@
     border-bottom: 1px solid #ddd;
   }
 
-  .from {
+  x-app::shadow x-item::shadow x-thing::shadow .from {
     display: inline;
     font-weight: bold;
   }
 
-  .timestamp {
+  x-app::shadow x-item::shadow x-thing::shadow .timestamp {
     margin-left: 10px;
     font-size: 12px;
     opacity: 0.8;
   }
 
 </style>
+<dom-module id="x-thing">
 <template>
 
   <div class="message">
