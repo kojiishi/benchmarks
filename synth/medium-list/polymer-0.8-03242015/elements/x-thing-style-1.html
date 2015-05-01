@@ -1,0 +1,38 @@
+<dom-module id="x-thing">
+<style>
+span { font-size: 1em; }
+</style>
+<template>
+
+  <div class="message">
+    <span class="from">{{a}}</span>
+    <span class="timestamp">{{b}}</span>
+    <div class="subject">{{c}}</div>
+  </div>
+
+</template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'x-thing',
+    properties: {
+      a: {
+        type: String,
+        observer: "aChanged"
+      },
+      b: {
+        type: String,
+        observer: "bChanged"
+      },
+      c: {
+        type: String,
+        observer: "cChanged"
+      }
+    },
+
+    aChanged: function() {},
+    bChanged: function() {},
+    cChanged: function() {}
+  });
+</script>
